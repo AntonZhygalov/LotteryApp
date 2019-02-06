@@ -1,0 +1,121 @@
+<div class="wrapper">
+<table >
+  <tbody>
+    <tr>
+      <td class="draw-date" colspan="2">
+        <input type="date" [(ngModel)]="pickedDate">
+      </td>
+    </tr>
+    <tr>
+      <td class="white">1<sup>st</sup></td>
+      <td colspan="2">
+        <input [(ngModel)]="newArr[0]" ref-listFilter  ngModel pattern="\d{4}$">
+      </td>
+    </tr>
+    <tr>
+      <td class="white">2<sup>nd</sup></td>
+      <td colspan="2">
+        <input [(ngModel)]="newArr[1]" ref-listFilter>
+      </td>
+    </tr>
+    <tr>
+      <td class="white">3<sup>rd</sup></td>
+      <td colspan="2">
+        <input [(ngModel)]="newArr[2]">
+      </td>
+    </tr>
+    <tr>
+      <th colspan="3" class="white">Starter Prizes</th>
+    </tr>
+    <tr>
+      <td>
+        <input [(ngModel)]="newArr[3]">
+      </td>
+      <td>
+        <input [(ngModel)]="newArr[4]">
+      </td>
+      <td>
+        <input [(ngModel)]="newArr[5]">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input [(ngModel)]="newArr[6]">
+      </td>
+      <td>
+        <input [(ngModel)]="newArr[7]">
+      </td>
+      <td>
+        <input [(ngModel)]="newArr[8]">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input [(ngModel)]="newArr[9]">
+      </td>
+      <td>
+        <input [(ngModel)]="newArr[10]">
+      </td>
+      <td>
+        <input [(ngModel)]="newArr[11]">
+      </td>
+    </tr>
+    <tr>
+      <td>
+      </td>
+      <td>
+        <input [(ngModel)]="newArr[12]">
+      </td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <th colspan="3" class="white">Consolation Prizes</th>
+    </tr>
+    <tr>
+      <td>
+        <input [(ngModel)]="newArr[13]">
+      </td>
+      <td>
+        <input [(ngModel)]="newArr[14]">
+      </td>
+      <td>
+        <input [(ngModel)]="newArr[15]">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input [(ngModel)]="newArr[16]">
+      </td>
+      <td>
+        <input [(ngModel)]="newArr[17]">
+      </td>
+      <td>
+        <input [(ngModel)]="newArr[18]">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input [(ngModel)]="newArr[19]">
+      </td>
+      <td>
+        <input [(ngModel)]="newArr[20]">
+      </td>
+      <td>
+        <input [(ngModel)]="newArr[21]">
+      </td>
+    </tr>
+    <tr>
+      <td>
+      </td>
+      <td>
+        <input [(ngModel)]="newArr[22]">
+      </td>
+      <td>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<button class="btn btn-primary" (click)="generate();">Generate</button>
+<button class="btn btn-primary" (click)="sendData();" [disabled]="listFilter.value.length < 4">Save Lottery</button>
+</div>

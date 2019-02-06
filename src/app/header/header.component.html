@@ -1,0 +1,15 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="">Lottery</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a routerLink="">Home <span class="sr-only">(current)</span></a></li>
+      <li *ngIf="loginService.isAuthenticated()"><a routerLink="/createNew">Create New Lottery</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li *ngIf="!loginService.isAuthenticated()"><a routerLink="/login">Login</a></li>
+      <li *ngIf="loginService.isAuthenticated()" (click)="onLogout()"><a routerLink="">Exit</a></li>
+    </ul>
+  </div>
+</nav>

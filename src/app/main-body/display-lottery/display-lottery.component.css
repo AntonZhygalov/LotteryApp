@@ -1,0 +1,50 @@
+.wrapper {
+    width: 48%;
+    margin: 5px 5px;
+    border: 3px solid white;
+    border-radius: 20px;
+    border-collapse:separate;
+    display: inline-flex;
+}
+table{
+    width: 100%;
+}
+tbody {
+    margin: 10px; 
+}
+
+
+
+td {
+    color: white;
+    text-align: left;
+    text-align: center;
+    width: 33%;
+}
+
+th {
+    color: white;
+    text-align: center;
+}
+
+.num {
+    width: 34px;
+    height: 34px;
+    margin: 2px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    background: white;
+    color: black;
+    text-align: center;
+    font-size: 1.2em;
+}
+.draw-date {
+    padding-left: 10px;
+    text-align: left;
+}
+
+.draw-number {
+    padding-right: 10px;
+    text-align: right;
+}
